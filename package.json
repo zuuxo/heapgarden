@@ -1,0 +1,33 @@
+{
+  "name": "heapgarden",
+  "version": "0.1.0",
+  "description": "A local Node.js memory visualizer that turns heap growth into a live garden.",
+  "type": "module",
+  "bin": {
+    "heapgarden": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && node dist/cli.js",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "memory",
+    "heap",
+    "memory-leak",
+    "profiling",
+    "observability",
+    "developer-tools"
+  ],
+  "author": "zuuxo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
